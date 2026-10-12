@@ -9,13 +9,12 @@
 
 <p align="center">
   <img src="docs/screenshots/live-recording.png" width="200" alt="Live recording with the route on the map" />
-  <img src="docs/screenshots/lock-screen-live-activity.png" width="200" alt="Live Activity on the Lock Screen" />
+  <img src="docs/screenshots/dynamic-island.png" width="200" alt="Live Activity in the Dynamic Island while recording" />
   <img src="docs/screenshots/run-detail.png" width="200" alt="Run detail with pace-coloured route and stats" />
   <img src="docs/screenshots/history.png" width="200" alt="History with route thumbnails and weekly totals" />
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/dynamic-island.png" width="200" alt="Dynamic Island while recording" />
   <img src="docs/screenshots/coach-and-charts.png" width="200" alt="Coach card with pace and elevation charts" />
   <img src="docs/screenshots/splits.png" width="200" alt="Splits table" />
   <img src="docs/screenshots/dark-mode.png" width="200" alt="Dark mode" />
@@ -152,6 +151,8 @@ ESLint bans `fetch` and friends everywhere except the server coach, so this list
 - Segments: matching repeated stretches across runs to compare efforts.
 
 ## License
+
+Map data © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), tiles by [OpenFreeMap](https://openfreemap.org) using the [OpenMapTiles](https://openmaptiles.org) schema.
 
 [MIT](LICENSE). Map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, tiles by [OpenFreeMap](https://openfreemap.org) using the [OpenMapTiles](https://openmaptiles.org) schema.
 
