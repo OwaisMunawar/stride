@@ -1,0 +1,29 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    ignore:
+      # Pinned by the Expo SDK; upgraded together with `npx expo install --fix`.
+      - dependency-name: 'expo'
+      - dependency-name: 'expo-*'
+      - dependency-name: '@expo/*'
+      - dependency-name: 'react'
+      - dependency-name: 'react-dom'
+      - dependency-name: 'react-native'
+      - dependency-name: 'react-native-*'
+      # Native map and renderer; upgraded deliberately against a device build.
+      - dependency-name: '@maplibre/*'
+      - dependency-name: '@shopify/react-native-skia'
+      # Major upgrades are reviewed by hand.
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
+    groups:
+      dev-tooling:
+        dependency-type: development
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

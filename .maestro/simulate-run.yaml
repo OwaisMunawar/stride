@@ -1,0 +1,46 @@
+appId: com.owaismunawar.stride
+name: Simulate a run, finish it and read the coach
+---
+- launchApp:
+    permissions:
+      location: always
+- extendedWaitUntil:
+    visible: 'Ready when you are'
+    timeout: 20000
+
+# The bundled 5 km GPX replays at 10x through the same pipeline as the GPS.
+- tapOn:
+    id: simulate-run
+- extendedWaitUntil:
+    visible: 'Recording'
+    timeout: 10000
+- assertVisible:
+    id: live-time
+- extendedWaitUntil:
+    visible:
+      id: last-split
+    timeout: 30000
+
+# Pause and resume.
+- tapOn:
+    id: pause-button
+- assertVisible: 'Paused'
+- tapOn:
+    id: resume-button
+- assertVisible: 'Recording'
+
+# Finishing needs a long press.
+- longPressOn:
+    id: finish-button
+- extendedWaitUntil:
+    visible:
+      id: run-title
+    timeout: 15000
+- scrollUntilVisible:
+    element:
+      id: coach-summary
+- assertVisible:
+    id: next-run
+- scrollUntilVisible:
+    element:
+      id: splits-table

@@ -1,0 +1,30 @@
+appId: com.owaismunawar.stride
+name: Browse history, switch units, check privacy
+---
+- launchApp
+- tapOn: 'History'
+- assertVisible:
+    id: week-card
+- assertVisible:
+    id: streak
+- tapOn:
+    id: 'run-row-.*'
+    index: 0
+- extendedWaitUntil:
+    visible:
+      id: run-title
+    timeout: 10000
+- assertVisible:
+    id: detail-distance
+- tapOn:
+    id: detail-close
+- tapOn: 'Settings'
+- tapOn:
+    id: units-imperial
+- assertVisible: 'Miles'
+- scrollUntilVisible:
+    element:
+      id: privacy
+- assertVisible: '.*stored only on this phone.*'
+- tapOn:
+    id: units-metric

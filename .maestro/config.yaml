@@ -1,0 +1,7 @@
+# Run against a demo-mode build (EXPO_PUBLIC_DEMO=1) on a simulator or
+# emulator with location permission granted: seeded runs and the bundled GPX
+# replay make every assertion below stable.
+flows:
+  - '*.yaml'
+excludeFiles:
+  - config.yaml
