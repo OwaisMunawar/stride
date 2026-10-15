@@ -30,7 +30,8 @@ describe('RecordScreen', () => {
     });
     await waitFor(() => expect(screen.getByTestId('live-distance').props.children).toBe('1.19'));
     expect(screen.getByTestId('last-split')).toBeTruthy();
-    expect(screen.getByText(/GPS good/)).toBeTruthy();
+    // The accuracy badge updates on its own render after the distance does.
+    expect(await screen.findByText(/GPS good/)).toBeTruthy();
 
     await fireEvent.press(screen.getByTestId('pause-button'));
     expect(await screen.findByText('Paused')).toBeTruthy();
