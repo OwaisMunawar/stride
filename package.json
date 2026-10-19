@@ -26,7 +26,7 @@
     "@legendapp/list": "3.6.0",
     "@maplibre/maplibre-react-native": "11.5.0",
     "@shopify/react-native-skia": "2.13.1",
-    "ai": "7.0.137",
+    "ai": "7.0.142",
     "expo": "~57.0.29",
     "expo-asset": "~57.0.19",
     "expo-build-properties": "~57.0.22",
