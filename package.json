@@ -21,7 +21,7 @@
     "e2e": "maestro test .maestro"
   },
   "dependencies": {
-    "@ai-sdk/openai": "4.0.91",
+    "@ai-sdk/openai": "4.0.101",
     "@expo/ui": "~57.0.24",
     "@legendapp/list": "3.6.0",
     "@maplibre/maplibre-react-native": "11.5.0",
