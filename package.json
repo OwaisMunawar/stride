@@ -23,7 +23,7 @@
   "dependencies": {
     "@ai-sdk/openai": "4.0.91",
     "@expo/ui": "~57.0.24",
-    "@legendapp/list": "3.6.0",
+    "@legendapp/list": "3.7.0",
     "@maplibre/maplibre-react-native": "11.5.0",
     "@shopify/react-native-skia": "2.13.1",
     "ai": "7.0.137",
