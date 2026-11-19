@@ -12,7 +12,7 @@ module.exports = {
     '^@modules/(.*)$': '<rootDir>/modules/$1',
   },
   transformIgnorePatterns: [
-    'node_modules/(?!((jest-)?react-native|@react-native(-community)?|expo(nent)?|@expo(nent)?/.*|expo-.*|@shopify/react-native-skia|@legendapp/.*|@maplibre/.*|ai|@ai-sdk/.*|@standard-schema/.*|@workflow/.*|eventsource-parser))',
+    'node_modules/(?!((jest-)?react-native|@react-native(-community)?|expo(nent)?|@expo(nent)?/.*|expo-.*|@shopify/react-native-skia|@legendapp/.*|@maplibre/.*|ai|zod|@ai-sdk/.*|@standard-schema/.*|@workflow/.*|eventsource-parser))',
   ],
   // The gate covers domain logic, repositories, the recording engine and the
   // coaches. Screens are covered by component tests and Maestro flows instead
